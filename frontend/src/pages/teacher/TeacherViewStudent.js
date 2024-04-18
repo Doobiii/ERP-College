@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserDetails } from "../../redux/userRelated/userHandle";
 import { useParams } from "react-router-dom";
-import { Button } from "@mui/material";
-import { PurpleButton } from "../../components/buttonStyles";
-
 const TeacherViewStudent = () => {
   const params = useParams();
   const dispatch = useDispatch();
@@ -49,14 +46,6 @@ const TeacherViewStudent = () => {
           Class: {sclassName.sclassName}
           <br />
           School: {studentSchool.schoolName}
-          <br />
-          <br />
-          <Button variant="contained">Add Attendance</Button>
-          <br />
-          <br />
-          <PurpleButton variant="contained">Add Marks</PurpleButton>
-          <br />
-          <br />
           <br />
         </div>
       )}
